@@ -3,7 +3,7 @@ class Pokemon
   attr_accessor :id, :name, :type, :db, :hp 
   # database_connection = SQLite3::Database.new('db/my_database.db')
 
-  def initialize(name:, id:, type:, db:, hp: = nil)
+  def initialize(name:, id:, type:, db:, hp: nil)
     # Scraper.new(db)
     @id = id
     @name = name
